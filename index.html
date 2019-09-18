@@ -15,12 +15,12 @@
     <div id="app">
       <el-row>
         <div class="title-bg">
-          <el-col :span="2">
+          <el-col :span="4">
             <div class="logo-container">
               <img class="logo" src="./img/icon-no-bg.png" alt="Logo" />
             </div>
           </el-col>
-          <el-col :span="22">
+          <el-col :span="20">
             <div class="title">Towero</div>
           </el-col>
         </div>
@@ -30,7 +30,7 @@
   </body>
 
   <!-- import Vue before Element -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="./lib/vue.min.js"></script>
   <!-- import JavaScript -->
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script>
@@ -43,6 +43,11 @@
   </script>
 
   <style>
+    #app {
+      font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    }
+
     .title-bg {
       background: linear-gradient(-112deg, #9364b0, #3f51b5);
       height: 60px;
@@ -69,9 +74,9 @@
 
     .welcome {
       color: #8994c6;
-      font-size: 42px;
+      font-size: 34px;
       text-align: center;
-      height: 900px;
+      height: 600px;
       display: flex;
       flex-direction: column;
       justify-content: center;
