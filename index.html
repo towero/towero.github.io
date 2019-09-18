@@ -1,1 +1,81 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>towero</title><link href="./static/css/app.30790115300ab27614ce176899523b62.css" rel="stylesheet"></head><body><div id="app"></div><script type="text/javascript" src="./static/js/manifest.3ad1d5771e9b13dbdad2.js"></script><script type="text/javascript" src="./static/js/vendor.e00e51762311e00a2108.js"></script><script type="text/javascript" src="./static/js/app.b22ce679862c47a75225.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <title>Towero</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <el-row>
+        <div class="title-bg">
+          <el-col :span="2">
+            <div class="logo-container">
+              <img class="logo" src="./img/icon-no-bg.png" alt="Logo" />
+            </div>
+          </el-col>
+          <el-col :span="22">
+            <div class="title">Towero</div>
+          </el-col>
+        </div>
+      </el-row>
+      <div class="welcome">Welocome to Towero</div>
+    </div>
+  </body>
+
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { visible: false };
+      }
+    });
+  </script>
+
+  <style>
+    .title-bg {
+      background: linear-gradient(-112deg, #9364b0, #3f51b5);
+      height: 60px;
+    }
+
+    .title {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 60px;
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .welcome {
+      color: #8994c6;
+      font-size: 42px;
+      text-align: center;
+      height: 900px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f6f6f6;
+    }
+  </style>
+</html>
