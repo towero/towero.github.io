@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+      href="./lib/index.css"
     />
     <title>Towero</title>
   </head>
@@ -32,12 +32,12 @@
   <!-- import Vue before Element -->
   <script src="./lib/vue.min.js"></script>
   <!-- import JavaScript -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="./lib/index.js"></script>
   <script>
     new Vue({
       el: '#app',
       data: function() {
-        return { visible: false };
+        return { };
       }
     });
   </script>
@@ -47,7 +47,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     #app {
       font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
         'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
